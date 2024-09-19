@@ -1,1 +1,11 @@
-<p>characters works!</p>
+<!-- ejemplo: -->
+<!-- <p>{{fruta}}</p> -->
+
+
+<!-- {{characters | json}} -->
+<div *ngFor="let character of characters">
+    <p>{{character.name}}</p>
+    <img src={{character.image}} alt="">
+    <p>{{character.status}}</p>
+
+</div>
