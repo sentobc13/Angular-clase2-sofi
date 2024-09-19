@@ -11,6 +11,7 @@ private apiUrl = 'https://rickandmortyapi.com/api/character';
   constructor(private http: HttpClient) {}
 
   getCharacters(): Observable<any> {
+    // axios.get(apiUrl)
     return this.http.get(this.apiUrl)
   }
 }
